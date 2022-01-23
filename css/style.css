@@ -1,0 +1,507 @@
+
+
+
+.progress_container_load {
+  transition: all 1.5s;
+}
+
+.progress-value_load {
+  animation: load 1.5s normal forwards;
+
+}
+
+
+.progress.prload {
+
+  display: flex;
+  height: 20px;
+  overflow: hidden;
+  font-size: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 15px;
+
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 5px 23px 11px rgba(255, 238, 74, 0.81);
+  box-shadow: 0px 10px 13px -7px #000000, 0px 5px 23px 11px rgba(255, 238, 74, 0.81);
+}
+
+.progress-bar.prload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #0d6efd;
+  transition: width 0.6s ease;
+}
+
+.progress.prload:before,
+.progress.prload:after {
+  display: none;
+}
+
+
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+/*-------------------------------------------------------------------------------*/
+
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0px;
+    opacity: 1
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+body {
+  background-color: gray;
+}
+
+/**{border: solid;}*/
+
+.fixed_icon {
+  position: fixed;
+  z-index: 100;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  right: 1%;
+  opacity: .5;
+  bottom: 2%;
+  background: #B5CEA4;
+  background-color: rgba(189, 103, 103, 0.39) !important;
+
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 18px 5px rgba(238, 239, 232, 0);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 18px 5px rgba(238, 239, 232, 0);
+}
+
+.fixed_icon a {
+  color: white;
+  font-size: 30px;
+  opacity: 1 !important;
+}
+
+.header1 {
+  background-image: url(../photos/front.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 500px ;
+}
+
+#nav1 {
+  background-color: rgba(189, 103, 103, 0.39) !important;
+}
+
+#nav1 a {
+  font-weight: 800;
+  color: black;
+}
+
+#nav1 a:hover {
+  color: gold;
+  opacity: 1 !important;
+}
+
+.headerdot h1 {
+  font-size: 6vw !important;
+  font-weight: bold;
+}
+
+.headerdot.py-5 {
+  padding-top: 18rem !important;
+  padding-bottom: 18rem !important;
+
+}
+
+.span-dot {
+  color: gold;
+}
+
+.l1.bg-transparent {
+  background-color: rgba(189, 103, 103, 0.39) !important;
+
+}
+
+a.l2:hover {
+  transition: 1s;
+  background-color: slateblue !important;
+}
+
+/*----------------------------------------------------Media-Q-----------------------------------------------------*/
+@media (max-width: 767.98px)
+
+ {
+  body {
+    margin: 0;
+  }
+
+  .counts{border-right: none !important;}
+
+  .header1{
+    background-position-x: 85% !important;
+  }
+
+  #nav1 {
+    background-color: rgba(150, 139, 224, 0.39) !important;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .logo1 {
+    position: absolute;
+  }
+
+  /*علشان يختفي و النجمه تاخد العرض كله يس*/
+
+  #navbarNavAltMarkup {
+    animation: fadeInLeft;
+    animation-duration: 1.5s;
+    margin-top: 60px;
+
+  }
+
+  #navbarTogglerDemo03 {
+    margin-top: 0;
+    /*اخد pos -fixed عشان اعرف اديله توب صفر و يقف فوق الشاشه فى حذا اللوجو*/
+  }
+
+  #navbarTogglerDemo03 a {
+    border-top: solid;
+    text-align: center;
+    margin: 0;
+    width: 96vw;
+    padding-right: 0;
+    right: 0;
+    position: relative;
+  }
+
+  /*اللينكات نفسها*/
+
+
+  .carousel-inner p {
+    width: 100vw !important;
+  }
+
+  .teamCard {
+    padding-top: 3rem;
+  }
+
+  .contact-row {
+    float: left;
+  }
+
+  /*.tableFooter{margin-left:5px;}*/
+}
+
+
+/*-------------------------------------------------------------------------------------------------end media*/
+
+.progress {
+  height: 10px;
+  background: #e9e9ea;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  overflow: visible;
+  position: relative;
+}
+
+.progress:before,
+.progress:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  z-index: 1;
+}
+
+.progress:after {
+  border: 7px solid #e9e9ea;
+  left: auto;
+  right: 0;
+}
+
+.progress .progress-bar {
+  box-shadow: none;
+  border: none;
+  border-radius: 15px;
+
+}
+
+.progress.orange:before {
+  border: 7px solid #df8484;
+}
+
+.progress.blue:before {
+  border: 7px solid #dfe210;
+}
+
+.progress.green:before {
+  border: 7px solid #53aa2c;
+}
+
+.progress.purple:before {
+  border: 7px solid #45b829;
+}
+.progress.orange .progress-value {
+  border: 5px solid #fe3b3b;
+  color: #fe3b3b;
+  width: 60px;
+  height: 40px;
+  line-height: 27px;
+  border-radius: 20px;
+  background: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  /*right: 0;*/
+  z-index: 2;
+
+}
+
+.progress.blue .progress-value {
+  border: 5px solid #1a4966;
+  color: #1a4966;
+
+  width: 60px;
+  height: 40px;
+  line-height: 27px;
+  border-radius: 20px;
+  background: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  position: absolute;
+  top: -12px;
+  left: 70%;
+  /*right: 0;*/
+  z-index: 2;
+
+}
+
+.progress.purple .progress-value {
+  border: 5px solid #66406f;
+  color: #66406f;
+  width: 60px;
+  height: 40px;
+  line-height: 27px;
+  border-radius: 20px;
+  background: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  position: absolute;
+  top: -12px;
+  left: 75%;
+  /*right: 0;*/
+  z-index: 2;
+}
+
+@-webkit-keyframes animate-positive {
+  0% {
+    width: 0;
+  }
+}
+
+@keyframes animate-positive {
+  0% {
+    width: 0;
+  }
+}
+
+.h3 {
+  color: #545454;
+  font-size: 60px;
+  line-height: 38px;
+  font-weight: 700;
+  text-align: center;
+}
+
+a img:hover {
+  opacity: .5;
+  transition: .8s;
+}
+
+.carousel-item img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.carousel-inner p {
+  background-color: rgb(106, 77, 138);
+  /* margin-right: 13rem !important;
+margin-left: 13rem !important;*/
+
+}
+
+#carouselExampleDark button {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  background-color: #fff;
+  margin: 0 7.5px;
+  display: inline-block;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+
+
+#carouselExampleDark button:hover {
+  background-color: rgb(94, 85, 155);
+}
+
+#carouselExampleDark button:focus {
+  background-color: yellow;
+}
+
+
+.after {
+  content: "";
+  /*المثلث البنفسجي الصغير اسفل النص*/
+  width: 0;
+  height: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border-style: solid;
+  border-width: 19px 18px 0;
+  border-color: #6a4d8a transparent transparent transparent;
+  position: relative;
+  right: 0;
+  top: -1rem;
+  left: 0;
+}
+
+
+button#blog:hover {
+  background-color: purple !important;
+  color: #000;
+}
+
+.card-title:hover {
+  color: gold;
+  transition: 0.5s;
+}
+
+.card small:hover {
+  color: rgb(94, 85, 155);
+}
+
+.card {
+  display: table;
+  /*خلا كل كارت طوله على اد الكلام*/
+}
+
+.teamCard h6 {
+  color: #5e5e5e;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.teamCard .p2 {
+  width: 100%;
+  margin: 0 0 10px;
+  color: #8c9597;
+  line-height: 25px;
+}
+
+.p2 a {
+  text-decoration: none;
+}
+
+.p2 a:hover {
+  text-decoration: underline;
+}
+
+
+.teamCard i {
+  border-radius: 50%;
+  border: 1px solid;
+  height: 30px;
+  width: 30px;
+}
+
+.contact a {
+  color: #5e5e5e;
+}
+
+small .cfoot:hover {
+  color: violet;
+}
+
+/*لم تعمل*/
+
+.tableFooter a {
+  text-decoration: none;
+  font-size: 13px;
+  color: gray;
+  text-align: left;
+  border: none;
+}
+
+.tableFooter a:hover {
+  color: purple;
+}
+
+.tableFooter i {
+  padding-right: 0.5rem;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.1rem .5rem 0.1rem;
+
+}
